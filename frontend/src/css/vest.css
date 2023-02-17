@@ -1,0 +1,130 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.desktop-view, .tablet-view, .mobile-view{
+    background-color: #FFF3F3 !important;
+}
+.desktop-view, .tablet-view, .description{
+    display: none;
+}
+.mobile-view{
+    display: block;
+}
+.card-display{
+    display: block;
+    border: none !important;    
+}
+.cards{
+    border: none !important;
+}
+.vest-title{
+    font-size: 14px !important;
+    font-weight: bolder;
+}
+.vest-text{
+    font-size: 13px !important;
+}
+.description, .description-tablet, .description-mobile{
+    background-color: #FFF3F3 !important;
+}
+.vest-specs{
+    width: 65%;
+}
+
+/* TABLET VIEW */
+@media all and (min-width: 810px){
+    .desktop-view, .mobile-view, .description{
+        display: none;
+    }
+    .tablet-view, .tablet-card-display{
+        display: inline-flex;
+        padding-right: 3px;
+    }
+    .description-tablet{
+        display: block;
+    }
+   
+    .card-style{
+        padding-right: 0px;  
+    }
+    .description-tablet{
+        display: inline;
+        text-align: center;
+    }
+    .vest-specs{
+        width: 65%;
+    }
+}
+
+/* DESKTOP */
+@media all and (min-width: 1025px){
+    .tablet-view, .mobile-view{
+        display: none;
+    }
+    .desktop-view, .card-display, .description{
+        display: flex; 
+        border: none !important;    
+    }
+    .card-style{
+        width: 25rem;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .vest-column{
+        float: left;        
+        min-height: auto;
+    }
+    .vest-left-side{
+        width: 75%;
+        padding-left: 1%;
+    }
+    .vest-right-side{
+        display: flex;
+        width: 25%;
+        font-size: 13px;
+        align-items: center;
+        padding-right: 2%;
+    }
+    /* .vest-both-rows:after{
+        content: "";
+        display: table;
+        clear: both;
+    } */
+    .download-text{
+        font-size: 10px;
+    }
+    .vest-specs{
+        width: 90%;
+    }
+}
+
+/* LANDSCAPE */
+
+@media (min-width: 810px) and (max-width: 1080px){
+    .desktop-view, .mobile-view, .description{
+        display: none;
+    }
+    .tablet-view, .tablet-card-display{
+        display: inline-flex;
+    }
+    .tablet-div{
+        text-align: center;
+    }
+    .description-tablet{
+        display: block;    }
+   
+    .card-style{
+        padding-right: 0px;  
+    }
+    .description-tablet{
+        display: inline;
+        text-align: center;
+    }
+    .vest-specs{
+        width: 75%;
+    }    
+}

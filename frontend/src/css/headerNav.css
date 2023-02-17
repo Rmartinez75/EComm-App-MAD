@@ -1,0 +1,87 @@
+
+.head-nav{
+    font-family: "isocteur";
+    background: #28231d;
+    padding-top: 5px !important;
+}
+
+.logo-nav{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.company-name{
+    color: rgb(175, 174, 174) !important;
+    font-size: 13px !important;
+    padding-left: 25px;
+}
+
+.firm-wears{
+    padding-right: 25px;
+    color: rgb(175, 174, 174);
+    font-size: 13px !important;
+}
+
+.right-side-nav{
+    color: rgb(175, 174, 174) !important;;
+    margin-top: 2.5px !important;
+    padding-right: 25px;
+    padding-top: 5px;
+    font-size: 13px !important;
+}
+
+.horizantal-divider{
+    color: white;
+}
+
+.vertical-divider{
+    display: none;
+    color: white;
+    padding-right: 25px;
+    margin-top: 8px;
+}
+
+.cart-nav {
+    padding-right: 25px;
+}
+
+.login-button{
+    background-color: transparent !important;
+    color: rgb(175, 174, 174) !important;
+    border-color:  rgb(175, 174, 174) !important;
+    border-radius: 50em !important;
+}
+
+.company-name:hover, .login-button:hover, .right-side-nav:hover, .breakdown-nav:hover{
+    color: white !important;
+}
+
+.collapsed-nav{
+    padding-left: 25px;
+}
+.hamburger{
+    padding-left: 25px !important;
+}
+
+.drop-down{
+    font-size: 13px !important;
+}
+
+/* TABLET */
+
+@media all and (min-width: 468px){
+    .hamburger{
+        padding-right: 25px !important;
+    }
+}
+
+/* DESKTOP */
+
+@media all and (min-width: 1025px){
+    .horizantal-divider{
+        display: none;
+    }
+    .vertical-divider{
+        display: flex;
+    }
+}
