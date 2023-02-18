@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import { AiFillCaretUp } from "react-icons/ai";
 import { AiFillCaretDown } from "react-icons/ai";
@@ -10,15 +11,11 @@ function Counter() {
 
   return (
     <div className='counter' style={{display: 'flex'}}>
-      <div className='count-up' style={{paddingLeft: '25px'}}>
-        <text style={{paddingLeft: '10px'}}>{countUp}</text> 
-        <span onClick={() => setCountUp(countUp + 1)} style={{paddingLeft: '10px'}}><AiFillCaretUp style={{color: 'red', fontSize: '150%', cursor: 'pointer'}} /></span>
-        <text style={{paddingLeft: '10px'}}>Up Vote</text>
+      <div className='count-up' style={{paddingRight: '25px'}}>
+        <span onClick={() => setCountUp(countUp + 1)} style={{paddingLeft: '20px'}}>{countUp}<AiFillCaretUp style={{marginLeft: '15px', marginRight: '15px', color: 'red', fontSize: '150%', cursor: 'pointer'}} />Up Vote</span>        
       </div>
-      <div className='count-down'>
-        <text style={{paddingLeft: '45px'}}>{countDown}</text>
-        <span onClick={() => setCountDown(countDown + 1)} style={{paddingLeft: '10px', cursor: 'pointer'}}><AiFillCaretDown style={{color: 'red', fontSize: '150%'}} /></span>
-        <text style={{paddingLeft: '10px'}}>Down Vote</text>
+      <div className='count-down'>        
+        <span onClick={() => setCountDown(countDown + 1)} style={{paddingLeft: '10px', cursor: 'pointer'}}>{countDown}<AiFillCaretDown style={{marginLeft: '15px', marginRight: '15px', color: 'red', fontSize: '150%'}} />Down Vote</span>        
       </div>
     </div>
   )
