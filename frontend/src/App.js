@@ -1,6 +1,6 @@
 
 import { Routes, Route } from 'react-router-dom';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './components/pages/HomePage';
 import AboutPage from './components/pages/AboutPage';
 import VestPage from './components/pages/VestPage';
