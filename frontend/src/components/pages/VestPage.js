@@ -13,7 +13,6 @@ function VestPage() {
         <br />
         <br />
         <br />
-        <h1 className='vest-name'>VEST</h1>
         <Vest />
         <ScrollToTopButton />
         <Footer />      
