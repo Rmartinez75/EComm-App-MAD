@@ -1,15 +1,23 @@
 
-import React from 'react'
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Card, Carousel, Col} from 'react-bootstrap';
-import '../css/vest.css'
+import '../css/vest.css';
 import Counter from './Counter';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 
 function Vest() {
+
+    useEffect(() => {
+        AOS.init({duration: 1500});
+    }, [])
+
   return (
     <div id='vest-section'>
         {/* DESKTOP VIEW */}
-        <div className='desktop-view'>            
+        <div className='desktop-view' data-aos="fade-up">            
             <div className='vest-both-rows'>
                 <br/>
                 <br/> 
@@ -83,17 +91,22 @@ function Vest() {
         </div>
 
         {/* TABLET VIEW */}
-        <div className='tablet-view'>            
+        <div className='tablet-view' data-aos="fade-up">            
             <div className='tablet-div'>
-            <br/>
+            <br data-aos="fade-up"/>
                 <Col className='tablet-card-display'>
                     <div className='card-style'>
-                        <Card style={{ width: '23.5rem' }} className='cards' >
+                        <Card style={{ width: '16rem' }} className='cards'>
                             <NavLink to='/vest'><Card.Img variant="top" src="frontVestTan.jpg" /></NavLink>
                         </Card>
                     </div>
                     <div className='card-style'>
-                        <Card style={{ width: '23.5rem' }} className='cards'>
+                        <Card style={{ width: '16rem' }} className='cards'>
+                            <NavLink to='/vest'><Card.Img variant="top" src="backVestBrown.jpg" /></NavLink>
+                        </Card>
+                    </div>
+                    <div className='card-style' style={{ width: '16rem' }} >
+                        <Card className='cards'>
                             <Carousel className='carousel-style'>
                                 <Carousel.Item>
                                     <NavLink to='/vest'><img
@@ -138,16 +151,21 @@ function Vest() {
         </div>
 
         {/* MOBILE VIEW */}
-        <div className='mobile-view'>
+        <div className='mobile-view' data-aos="fade-up">
             <div>
                 <Col className='card-display'>
                     <div className='card-style'>
-                        <Card style={{ width: '25rem' }} className='cards' >
+                        <Card className='cards' style={{ width: '5rem' }}>
                             <NavLink to='/vest'><Card.Img variant="top" src="frontVestTan.jpg" /></NavLink>
                         </Card>
                     </div>
                     <div className='card-style'>
-                        <Card style={{ width: '25rem' }} className='cards'>
+                        <Card style={{ width: '5rem' }} className='cards'>
+                            <NavLink to='/vest'><Card.Img variant="top" src="backVestBrown.jpg" /></NavLink>
+                        </Card>
+                    </div>
+                    <div className='card-style' style={{ width: '5rem' }}>
+                        <Card className='cards'>
                             <Carousel className='carousel-style'>
                                 <Carousel.Item>
                                     <NavLink to='/vest'><img
@@ -190,6 +208,7 @@ function Vest() {
                 <br/>
             </div>
         </div>
+
     </div>
   )
 }

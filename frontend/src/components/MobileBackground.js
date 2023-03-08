@@ -45660,8 +45660,26 @@ const MobileBackground = (props) => (
           >
             {"[VR: CONCEPT: NFC DATABASE] "}
           </tspan>
-        </text>
+        </text>        
       </a>
+      {/* <text xmlSpace="preserve"
+          style={{
+            fontSize: 30,
+            fontFamily: "isocteur",
+            InkscapeFontSpecification: "isocteur",
+            fill: "#999",
+            strokeWidth: 0.75,
+          }}
+          x={373.967}
+          y={-185.52}
+          transform="scale(1 -1)"><tspan className=""
+            style={{ strokeWidth: 0.75 }}
+            x={590}
+            y={-555}
+          >      
+      {"Virtual Reflection (VR) originated as an idea of developing a coherent tool that would bridge the gap between our physical and virtual realities. This tool progressively became a soft and flexible technology through integrating techniques using textiles as its bases. The finish products are a unique and balanced blend of intricate sewing and methodic technology placements, transparency being the key."} 
+      </tspan>
+    </text> */}
     </g>
   </svg>
 )

@@ -4,6 +4,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: #FFF3F3
+}
 .desktop-view, .tablet-view, .mobile-view{
     background-color: #FFF3F3 !important;
 }
@@ -11,11 +14,7 @@
     display: none;
 }
 .mobile-view{
-    display: block;
-}
-.card-display{
-    display: block;
-    border: none !important;    
+    display: inline-flex;
 }
 .cards{
     border: none !important;
@@ -31,7 +30,7 @@
     background-color: #FFF3F3 !important;
 }
 .vest-specs{
-    width: 65%;
+    width: 100%;
 }
 
 /* TABLET VIEW */
@@ -41,7 +40,6 @@
     }
     .tablet-view, .tablet-card-display{
         display: inline-flex;
-        padding-right: 3px;
     }
     .description-tablet{
         display: block;
