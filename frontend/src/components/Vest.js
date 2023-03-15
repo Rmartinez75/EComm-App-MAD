@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Card, Carousel, Col} from 'react-bootstrap';
+import VestMobile from './vest-comps/VestMobile';
 import '../css/vest.css';
 import Counter from './Counter';
 import AOS from 'aos';
@@ -11,7 +12,7 @@ import 'aos/dist/aos.css'
 function Vest() {
 
     useEffect(() => {
-        AOS.init({duration: 1500});
+        AOS.init({duration: 1000});
     }, [])
 
   return (
@@ -149,66 +150,9 @@ function Vest() {
                 <br/>
             </div>
         </div>
-
+        
         {/* MOBILE VIEW */}
-        <div className='mobile-view' data-aos="fade-up">
-            <div>
-                <Col className='card-display'>
-                    <div className='card-style'>
-                        <Card className='cards' style={{ width: '5rem' }}>
-                            <NavLink to='/vest'><Card.Img variant="top" src="frontVestTan.jpg" /></NavLink>
-                        </Card>
-                    </div>
-                    <div className='card-style'>
-                        <Card style={{ width: '5rem' }} className='cards'>
-                            <NavLink to='/vest'><Card.Img variant="top" src="backVestBrown.jpg" /></NavLink>
-                        </Card>
-                    </div>
-                    <div className='card-style' style={{ width: '5rem' }}>
-                        <Card className='cards'>
-                            <Carousel className='carousel-style'>
-                                <Carousel.Item>
-                                    <NavLink to='/vest'><img
-                                        className="d-block w-100"
-                                        src="frontVestTan.jpg"
-                                        alt="First slide"
-                                    /></NavLink>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-100"
-                                        src="backVestBrown.jpg"
-                                        alt="Second slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-100"
-                                        src="frontVestBlue.jpg"
-                                        alt="Third slide"
-                                    />
-                                </Carousel.Item>
-                            </Carousel>
-                        </Card>   
-                    </div>
-                    <div className='card-style'>     
-                        <Card className='col-12 cards description-mobile'>
-                            <br/>
-                            <Card.Body>
-                                <Card.Title className='vest-title'>VR: Air Vest</Card.Title>
-                                <Card.Text className='vest-text'>
-                                The Virtual Reflection Air Vest is a wearable technology device designed by Metaphysical Abstract Design. This device was originally designed to house VR technologies. It can easily accommodate other wearable technologies with its access pockets and wire conduits, allowing users to use this vest as a prototype for their own ideas. The VR Air Vest comes equipt with an environmental carbon sensor enabling users to access both indoor and outdoor carbon levels. When you put on a VR Air Vest your data counts. You gain access to a community of data by users just like you around the world.
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>   
-                    </div> 
-                </Col>
-                <img src="schematicsMobile.png" alt="" className="vest-specs col-12" ></img>
-                <br/>
-                <br/>
-            </div>
-        </div>
-
+        <VestMobile />
     </div>
   )
 }

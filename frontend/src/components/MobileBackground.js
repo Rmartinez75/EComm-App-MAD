@@ -45569,7 +45569,7 @@ const MobileBackground = (props) => (
         <text
           xmlSpace="preserve"
           style={{
-            fontSize: 30,
+            fontSize: 20,
             fontFamily: "isocteur",
             InkscapeFontSpecification: "isocteur",
             fill: "#000",
@@ -45594,7 +45594,7 @@ const MobileBackground = (props) => (
         <text
           xmlSpace="preserve"
           style={{
-            fontSize: 30,
+            fontSize: 20,
             fontFamily: "isocteur",
             InkscapeFontSpecification: "isocteur",
             fill: "#999",
@@ -45618,7 +45618,7 @@ const MobileBackground = (props) => (
         <text
           xmlSpace="preserve"
           style={{
-            fontSize: 30,
+            fontSize: 20,
             fontFamily: "isocteur",
             InkscapeFontSpecification: "isocteur",
             fill: "#999",
@@ -45642,7 +45642,7 @@ const MobileBackground = (props) => (
         <text
           xmlSpace="preserve"
           style={{
-            fontSize: 30,
+            fontSize: 20,
             fontFamily: "isocteur",
             InkscapeFontSpecification: "isocteur",
             fill: "#999",

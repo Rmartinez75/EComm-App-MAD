@@ -13,9 +13,6 @@ body{
 .desktop-view, .tablet-view, .description{
     display: none;
 }
-.mobile-view{
-    display: inline-flex;
-}
 .cards{
     border: none !important;
 }
@@ -50,16 +47,16 @@ body{
     }
     .description-tablet{
         display: inline;
-        text-align: center;
+
     }
     .vest-specs{
-        width: 65%;
+        width: 100%;
     }
 }
 
 /* DESKTOP */
 @media all and (min-width: 1025px){
-    .tablet-view, .mobile-view{
+    .tablet-view, .mobile-view, .landscape-view{
         display: none;
     }
     .desktop-view, .card-display, .description{
@@ -87,42 +84,10 @@ body{
         align-items: center;
         padding-right: 2%;
     }
-    /* .vest-both-rows:after{
-        content: "";
-        display: table;
-        clear: both;
-    } */
     .download-text{
         font-size: 10px;
     }
     .vest-specs{
         width: 90%;
     }
-}
-
-/* LANDSCAPE */
-
-@media (min-width: 810px) and (max-width: 1080px){
-    .desktop-view, .mobile-view, .description{
-        display: none;
-    }
-    .tablet-view, .tablet-card-display{
-        display: inline-flex;
-    }
-    .tablet-div{
-        text-align: center;
-    }
-    .description-tablet{
-        display: block;    }
-   
-    .card-style{
-        padding-right: 0px;  
-    }
-    .description-tablet{
-        display: inline;
-        text-align: center;
-    }
-    .vest-specs{
-        width: 75%;
-    }    
 }
