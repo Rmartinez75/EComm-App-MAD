@@ -83,6 +83,8 @@ function Vest() {
                                 </Card.Text>
                             </Card.Body>
                         </Card>
+                        <br/>
+                        <br/>
                         <Counter />   
                     </div> 
                 </div>         
@@ -144,6 +146,9 @@ function Vest() {
                             </Card.Text>
                         </Card.Body>
                     </Card>
+                    <br/>
+                    <br/>
+                <Counter />
                 </div>
                 <img src="schematicsMobile.png" alt="" className="vest-specs col-12" ></img>
                 <br/>
