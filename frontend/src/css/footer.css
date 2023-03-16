@@ -5,7 +5,8 @@
 }
 .footer{
     font-family: 'isocteur';
-    right: 0;
+    width: 100%;
+    margin-top: auto;
 }
 .top-footer{
     background-color: rgb(211, 204, 204);
@@ -32,4 +33,19 @@
 }
 .copyright{
     font-size: 0.6rem;
+}
+
+@media all and (min-width: 428px){
+    .top-footer{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+
+@media all and (min-width: 810px) {
+    .top-footer{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    
 }

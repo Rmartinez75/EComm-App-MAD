@@ -1,14 +1,21 @@
 
-import React from 'react'
+import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Carousel, Col, Row, Card } from 'react-bootstrap'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 import './vest-css/vestMobile.css'
 import '../../css/vest.css'
 
 function VestMobile() {
+
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, [])
+
   return (
 
-    <div className='mobile-view'>
+    <div className='mobile-view' data-aos="fade-up">
         <div className='mobile-page'>
             <br />
             <Row className='container img-row'>

@@ -14,9 +14,10 @@
     font-family: 'isocteur';
 }
 
-/* .vest-page{
-    background-color: #FFF3F3 !important;
+@media all and (min-width: 810px){
+.App{
+    min-height: 100vh;
+    display: flex;   
 }
-.vest-name{
-    text-align: center;
-} */
+}
+

@@ -4,7 +4,7 @@ import '../css/footer.css'
 
 function Footer() {
   return (
-    <div className='footer' expand='lg'>
+    <div className='footer'>
       <Nav className="justify-content-center top-footer" activeKey="/home">
         <Nav.Item className="footer-category">
             <p className='footer-titles'>COMMUNITY</p>

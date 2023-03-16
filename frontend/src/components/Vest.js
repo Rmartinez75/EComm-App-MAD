@@ -135,7 +135,7 @@ function Vest() {
                     </div>                
                 </Col>
                 <div>
-                    <Card style={{ width: '20rem' }} className='cards description-tablet'>
+                    <Card className='cards description-tablet'>
                         <br/>
                         <Card.Body>
                             <Card.Title className='vest-title'>VR: Air Vest</Card.Title>
